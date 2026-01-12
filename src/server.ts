@@ -3,7 +3,7 @@ dotenv.config()
 import express from 'express'
 import cors from 'cors'
 
-import orderbookRoutes from '../src/routes/orderbook.routes'
+import orderbookRoutes from './routes/orderbook.routes'
 import { startOrderbookPolling } from './services/orderbook.service'
 
 const app = express()
