@@ -43,16 +43,6 @@ Acts as a buffer for the WhiteBIT API by:
 
 ---
 
-### Resilient Error Handling
-
-Advanced error-handling mechanisms ensure service stability:
-
-- Graceful handling of **422 (Unprocessable Entity)** errors
-- Automatic recovery from **429 (Rate Limit Exceeded)** responses
-- Stable operation during periods of high market volatility
-
----
-
 ## 📡 API Reference
 
 ### Get Orderbook Data
