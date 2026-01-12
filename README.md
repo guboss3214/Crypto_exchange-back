@@ -53,6 +53,25 @@ Advanced error-handling mechanisms ensure service stability:
 
 ---
 
+## 📡 API Reference
+
+### Get Orderbook Data
+
+Retrieves the latest snapshot of the orderbook for a specific market pair.
+
+**Endpoint:** `GET /api/orderbook`
+
+**Query Parameters:**
+| Parameter | Type | Required | Description |
+|-----------|--------|----------|--------------------------------------|
+| `market` | string | Yes | Market pair (e.g., `ETH_USDT`, `BTC_USDT`) |
+
+**Example Request:**
+
+[https://crypto-exchange-back-1.onrender.com/api/orderbook?market=ETH_USDT](https://crypto-exchange-back-1.onrender.com/api/orderbook?market=ETH_USDT)
+
+---
+
 ## Tech Stack
 
 - **Runtime:** Node.js + TypeScript
@@ -96,3 +115,7 @@ Extend the matching engine to support:
 
 - Implement **JWT-based authentication** for secure order placement.
 - Add API Request Signing to mimic real exchange security protocols.
+
+```
+
+```
