@@ -23,7 +23,7 @@ export const startOrderbookPolling = () => {
   setInterval(async () => {
     for (const curr of CURRENCY) {
       try {
-        const url = `https://whitebit.com/api/v4/public/orderbook/${curr}?limit=5&level=2`
+        const url = `https://whitebit.com/api/v4/public/orderbook/${curr}?limit=50&level=2`
         const { data } = await axios.get(url)
 
         cachedOrderbook[curr] = {
